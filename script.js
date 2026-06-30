@@ -1,15 +1,20 @@
 function openGift(){
 
-document.getElementById("giftSection")
-.style.display="block";
+document.getElementById("giftSection").style.display="block";
 
-document.getElementById("music").play();
+const music = document.getElementById("music");
+
+music.volume = 0.7;
+music.loop = true;
+
+music.play().catch(err=>{
+console.log(err);
+});
 
 window.scrollTo({
 top:window.innerHeight,
 behavior:"smooth"
 });
-
 }
 
 const images=[
