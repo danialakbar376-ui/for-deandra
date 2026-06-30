@@ -1,20 +1,24 @@
 function openGift(){
+
 document.getElementById("giftSection")
 .style.display="block";
+
+document.getElementById("music").play();
 
 window.scrollTo({
 top:window.innerHeight,
 behavior:"smooth"
 });
+
 }
 
 const images=[
-"images/deandra1.jpg",
-"images/deandra2.jpg",
-"images/deandra3.jpg",
-"images/deandra4.jpg",
-"images/deandra5.jpg",
-"images/deandra6.jpg"
+"deandra1.jpg",
+"deandra2.jpg",
+"deandra3.jpg",
+"deandra4.jpg",
+"deandra5.jpg",
+"deandra6.jpg"
 ];
 
 const quotes=[
