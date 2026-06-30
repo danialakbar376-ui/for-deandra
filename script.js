@@ -57,7 +57,10 @@ function createHeart(){
 
 const heart=document.createElement("div");
 
-heart.innerHTML="🤍";
+const hearts=["💗","💕","💖","💞","💘"];
+
+heart.innerHTML=
+hearts[Math.floor(Math.random()*hearts.length)];
 
 heart.style.position="absolute";
 heart.style.left=Math.random()*100+"vw";
